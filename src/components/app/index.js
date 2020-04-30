@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router, Switch, Route, NavLink,
 } from 'react-router-dom';
 import Counter from '../counter';
+import Controls from '../controls';
 
 const About = (props) => {
   return <div> All there is to know about me </div>;
@@ -17,6 +18,7 @@ const Nav = (props) => {
     <nav>
       <ul>
         <Counter />
+        <Controls />
         <li><NavLink to="/" exact>Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
         <li><NavLink to="/test/id1">test id1</NavLink></li>
